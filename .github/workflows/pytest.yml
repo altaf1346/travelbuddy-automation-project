@@ -34,7 +34,7 @@ jobs:
         run: |
           pytest --junitxml=test-results.xml --html=reports/report.html
 
-      # Step 5: Upload test results (optional)
+      # Step 5: Upload test results
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v3
